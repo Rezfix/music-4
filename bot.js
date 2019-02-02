@@ -11,13 +11,13 @@ const gif = require("gif-search");
 const client = new Discord.Client({disableEveryone: true});
  
 client.on('ready', () => {
-    client.user.setGame('Type 4help','https://www.twitch.tv/RezfixServer');
+    client.user.setGame('3play Sounds','https://www.twitch.tv/Family');
     console.log('---------------');
-    console.log('4play Online')
+    console.log('3play Online')
     console.log('---------------')
   });
 
-const prefix = "4";
+const prefix = "3";
 /////////////////////////
 ////////////////////////
  
@@ -310,7 +310,7 @@ function play(guild, song) {
  
  
 client.on('message', message => {
-   if (message.content === '4help') {
+   if (message.content === '3help') {
        let helpEmbed = new Discord.RichEmbed()
        .setTitle('**أوامر الميوزك...**')
        .setDescription('**برفكس البوت (!)**')
@@ -339,7 +339,7 @@ client.on('message', message => {
    }
 });
  
-const adminprefix = "!";
+const adminprefix = "3";
 const devs = ['383606619671494659','383606619671494659'];
 client.on('message', message => {
  var argresult = message.content.split(` `).slice(1).join(' ');
@@ -366,8 +366,8 @@ if (message.content.startsWith(adminprefix + 'setT')) {
  
 client.on('ready',async () => {
 console.log("Starting..");
-let g = client.guilds.get("493237177170395155");
-let c = g.channels.get("513071972964499469");
+let g = client.guilds.get("514860264600895529");
+let c = g.channels.get("541101878331572234");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
