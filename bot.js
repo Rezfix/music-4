@@ -367,7 +367,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 client.on('ready',async () => {
 console.log("Starting..");
 let g = client.guilds.get("514860264600895529");
-let c = g.channels.get("541101878331572234");
+let c = g.channels.get("541101918215208961");
 if(c.type === 'voice') {
 c.join();
 setInterval(() => {
